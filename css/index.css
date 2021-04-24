@@ -61,6 +61,7 @@ background: rgba(0,0,0,0.076)
     font-size: 15pt;
     text-transform: capitalize;
     display: flex;
+    align-items: center;
     color: #fff;
     text-decoration: none;
 }
@@ -70,7 +71,7 @@ background: rgba(0,0,0,0.076)
 }
 
 .side-bar-body li a .icon{
-    margin-right: 25px;
+    margin-right: 35px;
 }
 
 
@@ -141,16 +142,16 @@ main {
 }
 
 .card-group {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 
 .card-single {
     display: flex;
-    width: 350px;
-    height: 200px;
+    width: 370px;
+    height: 250px;
     margin:10px auto;
     border-radius: 4px;
     align-items: center;
@@ -306,7 +307,7 @@ main.enlarge header {
 .card-single-chart {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 650px;
     height: 250px;
     margin:10px auto;
     border-radius: 4px;
@@ -365,3 +366,53 @@ main.enlarge header {
     width: 50%;
 }
 
+@media (max-width: 1460px) {
+    .side-bar-body li a {
+        padding: 5px 15px;
+        font-size: 13pt; 
+    }
+    
+}
+
+@media (max-width: 660px) {
+    .side-bar-body li a {
+        padding: 5px 15px;
+        font-size: 13pt; 
+    }
+
+    .search-wrapper {
+        display: none;
+    }
+
+    .user-wrapper .name {
+        display: none;
+    }
+
+    .card-single {
+        display: flex;
+        width: 100%;
+        height: 250px;
+        margin:10px auto;
+        padding: 5px;
+    }
+
+    .side-bar-body li a {
+        overflow: hidden;
+    }
+    
+    .sidebar-menu.close {
+        width: 0px;
+        padding: 0;
+    }
+
+    main.enlarge {
+        margin-left: 0%;
+        transition: .5s;
+    }
+
+    main.enlarge header {
+        left: 0%;
+        width: 100%;
+        transition: .5s;
+    }
+}
