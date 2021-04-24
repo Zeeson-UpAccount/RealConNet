@@ -416,3 +416,163 @@ main.enlarge header {
         transition: .5s;
     }
 }
+
+
+
+
+
+/* login page  */
+
+.login-container {
+    padding: 50px 5vh;
+}
+
+
+
+.nav  {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 25pt;
+}
+
+.login-container .title {
+    text-align: center;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.login-container .form-control {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10vh;
+    flex-wrap: wrap;
+}
+
+input {
+    width: 400px;
+    padding: 15px 35px;
+    outline: none;
+    border: 1px solid #313131;
+}
+
+.login-container .input-field {
+    position: relative;
+    margin: 20px 0;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container .input-field .icon {
+    position: absolute;
+    left: 12px;
+    top: 16px;
+
+}
+
+
+.login-container .head {
+    margin-bottom: 50px;
+    font-size: 20pt;
+}
+
+.login-container form {
+    margin-bottom: 20px;
+}
+
+
+.login-container form .btn input{
+    background: #313131;
+    color: #fff;
+}
+
+@media (max-width: 680px) {
+     
+.login-container {
+    padding: 20px 3vh;
+}
+
+
+
+.nav  {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20pt;
+}
+
+.login-container .title {
+    text-align: center;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.login-container .input-field {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10vh;
+    flex-wrap: wrap;
+}
+
+input {
+    width: 100%;
+    padding: 15px 35px;
+    outline: none;
+    border: 1px solid #313131;
+}
+
+.login-container .input-field {
+    position: relative;
+    margin: 20px 0;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container .input-field .icon {
+    position: absolute;
+    left: 12px;
+    top: 16px;
+
+}
+
+
+.login-container .head {
+    margin-bottom: 50px;
+    font-size: 20pt;
+}
+
+.login-container form {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.login-container .form-field {
+    width: 100%;
+}
+
+
+.login-container form .btn input{
+    background: #313131;
+    color: #fff;
+}
+}
