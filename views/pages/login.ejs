@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="nav">
-        <a href="index.html" class="backspace">
+        <a href="/" class="backspace">
            <i class="fas fa-arrow-left    "></i>
         </a>
     </div>
@@ -26,20 +26,38 @@
             <h3 class="head">
                 Sign In
             </h3>
-            <form action="">
-
+            <% if (messages.error) { %>
+            <div class="alert alert-danger alert-dismissible" style="color: red">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <strong>Error!</strong> <%= messages.error %>
+            </div>
+          <% } %>
+          <br />
+            <form action="/login" method="POST">
                 <div class="form-control">
                     <div class="form-field">
                         <label for="">Email</label>
                        <div class="input-field">
-                        <input type="text" placeholder="Email.....">
+                        <input
+                        type="email"
+                        id="username"
+                        name="username"
+                        placeholder="Username....."
+                        required
+                        >
                         <i class="fas fa-envelope icon   "></i>
                        </div>
                     </div>
                     <div class="form-field">
                         <label for="">Password</label>
                         <div class="input-field">
-                            <input type="text"  placeholder="Password.....">
+                            <input
+                              type="password"
+                              id="password"
+                              name="password"
+                              placeholder="Password....."
+                              required
+                            >
                             <i class="fas fa-lock  icon  "></i>
                         </div>
                         <a href="">Forgot Password ?</a>
@@ -50,7 +68,7 @@
                     </div>
             </form>
             <span>Need to RealConNect ?
-            <a href="">
+            <a href="/register">
                 Create an account
             </a>
         </span>
