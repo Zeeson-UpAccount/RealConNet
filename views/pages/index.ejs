@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
-    <title>Admin Dashboard</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <title>Dashboard</title>
 </head>
 <body>
 
@@ -13,7 +15,8 @@
     <div class="sidebar-menu">
         <div class="side-menu-header">
             <div class="logo">
-                Logo
+              <img class="ml-5 mt-5" alt="" src="image/logos.png" />
+              <p class="h5 ml-2 text-dark"> <span class="h3">R</span>eal<span class="h3">C</span>onnect</p>
             </div>
         </div>
         <div class="side-bar-body">
@@ -26,25 +29,37 @@
             <li>
                 <a href="">
                     <i class="fas fa-users  icon  "></i>
-                    Password Reset
+                    projects
                 </a>
             </li>
             <li>
                 <a href="">
                     <i class="fas fa-clipboard-list   icon "></i>
-                    Add Content
+                    orders
                 </a>
             </li>
             <li>
                 <a href="">
                     <i class="fas fa-shopping-bag  icon  "></i>
-                    Controls
+                    inventory
                 </a>
             </li>
             <li>
                 <a href="">
                     <i class="fas fa-user-circle  icon  "></i>
                     accounts
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fas fa-clipboard-list icon "></i>
+                    tasks
+                </a>
+            </li>
+            <li>
+                <a href="/logout">
+                    <i class="fas fa-clipboard-list icon "></i>
+                    Logout
                 </a>
             </li>
         </div>
@@ -59,21 +74,19 @@
                 <label id="menu">
                     <i class="fas fa-bars  icon  "></i>
                 </label>
-                Hello Admin!
+                Greetings <%= name %>!
             </h1>
             <div class="search-wrapper">
                 <i class="fas fa-search  icon  "></i>
                 <input type="search" placeholder="Search here...">
             </div>
-            <div class="user-wrapper">
+            <a href="login.html" class="user-wrapper">
                 <i class="fas fa-user-circle  icon  "></i>
-                <div class="name">
-                    <h4>Admin</h4>
-
-                </div>
-            </div>
+                <span class="name">
+                    <h4>Doe</h4>
+                </span>
+            </a>
         </header>
-
 
         <!-- content  -->
         <div class="body">
@@ -95,23 +108,16 @@
 
             </div>
 
-
-
             <div class=" card-full shadow mb-4">
                 <div class="card-head p-3">
                     <h6 class="m-0">Overview</h6>
                 </div>
                 <div class="card-body">
                     <div class="chart-area">
-                        <canvas id="myAreaChart"></canvas>
+                        <canvas id="myAreaChart4"></canvas>
                     </div>
                 </div>
             </div>
-
-
-
-
-
         </div>
 
     </main>
@@ -119,8 +125,9 @@
     <script src="./js/chart.min.js"></script>
     <script src="./js/all.min.js"></script>
     <script src="./js/index.js"></script>
-
-
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
 
 </body>
 </html>

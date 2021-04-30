@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+
+    <!-- side-bar-menu -->
+    <div class="sidebar-menu">
+        <div class="side-menu-header">
+            <div class="logo">
+              <img class="ml-5 mt-5" alt="" src="image/logos.png" />
+              <p class="h5 ml-2 text-dark"> <span class="h3">R</span>eal<span class="h3">C</span>onnect</p>
+            </div>
+        </div>
+        <div class="side-bar-body">
+            <li class="active">
+                <a href="">
+                    <i class="fas fa-igloo icon  "></i>
+                    dashboard
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fas fa-key  icon  "></i>
+                    Password reset
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fas fa-tasks  icon "></i>
+                    Content control
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fas fa-upload  icon  "></i>
+                    Content upload
+                </a>
+            </li>
+        </div>
+    </div>
+
+    <!-- main body  -->
+    <main>
+
+        <!-- header  -->
+        <header>
+            <h1>
+                <label id="menu">
+                    <i class="fas fa-bars  icon  "></i>
+                </label>
+                Hello Admin!
+            </h1>
+            <div class="search-wrapper">
+                <i class="fas fa-search  icon  "></i>
+                <input type="search" placeholder="Search here...">
+            </div>
+            <div class="user-wrapper">
+                <i class="fas fa-user-circle  icon  "></i>
+                <div class="name">
+                    <h4>Admin</h4>
+
+                </div>
+            </div>
+        </header>
+
+
+        <!-- content  -->
+        <div class="body">
+
+            <!-- mini cards  -->
+            <div class="card-group">
+
+                <!-- <div class="card-single">
+                    <canvas id="myChart1"></canvas>
+                </div>
+
+                <div class="card-single">
+                    <canvas id="myChart2"></canvas>
+                </div>
+
+                <div class="card-single">
+                    <canvas id="myChart3"></canvas>
+                </div> -->
+              <!--  -->
+              <div class="row my-4 card-group">
+                    <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                        <div class="card">
+                            <h5 class="card-header">Users</h5>
+                            <div class="card-body">
+                              <h5 class="card-title">100k+</h5>
+                              <p class="card-text">Feb 1 - Apr 1, United States</p>
+                              <p class="card-text text-success">18.2% increase since last month</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-4 mb-lg-0 col-lg-3">
+                        <div class="card">
+                            <h5 class="card-header">Revenue</h5>
+                            <div class="card-body">
+                              <h5 class="card-title">$2.4k</h5>
+                              <p class="card-text">Feb 1 - Apr 1, United States</p>
+                              <p class="card-text text-success">14.6% increase since last month</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-4 mb-lg-0 col-lg-3">
+                       <div class="card">
+                           <h5 class="card-header">Purchases</h5>
+                           <div class="card-body">
+                             <h5 class="card-title">43</h5>
+                             <p class="card-text">Feb 1 - Apr 1, United States</p>
+                             <p class="card-text text-danger">2.6% decrease since last month</p>
+                           </div>
+                         </div>
+                   </div>
+                   <div class="col-12 col-md-6 mb-4 mb-lg-0 col-lg-3">
+                       <div class="card">
+                           <h5 class="card-header">Traffic</h5>
+                           <div class="card-body">
+                             <h5 class="card-title">64k</h5>
+                             <p class="card-text">Feb 1 - Apr 1, United States</p>
+                             <p class="card-text text-success">11.5% increase since last month</p>
+                           </div>
+                         </div>
+                   </div>
+                  </div>
+            </div>
+
+            <div class=" card-full shadow mb-4">
+                <div class="card-head p-3">
+                    <h6 class="m-0">Overview</h6>
+                </div>
+                <div class="card-body">
+                    <div class="chart-area">
+                        <canvas id="myAreaChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.1.1/dist/chart.min.js"></script>
+    <script src="./js/chart.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/index.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+</body>
+</html>
