@@ -2,23 +2,12 @@
   "name": "realconnet",
   "version": "1.0.0",
   "description": "realconnet baseline functional pages on AWS",
-  "main": "server.js",
+  "main": "app.js",
+  "engines": { "node" : "14.16.0" },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Zeeson-UpAccount/JohanDashboard.git"
-  },
-  "author": "Ibrahim",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Zeeson-UpAccount/JohanDashboard/issues"
-  },
-  "homepage": "https://github.com/Zeeson-UpAccount/JohanDashboard#readme",
   "dependencies": {
-    "bcrypt": "^5.0.1",
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.6",
@@ -30,5 +19,15 @@
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^6.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zeeson-UpAccount/JohanDashboard.git"
+  },
+  "author": "Ibrahim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zeeson-UpAccount/JohanDashboard/issues"
+  },
+  "homepage": "https://github.com/Zeeson-UpAccount/JohanDashboard#readme"
 }
