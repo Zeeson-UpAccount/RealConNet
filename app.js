@@ -50,12 +50,12 @@ app.get("/", checkAuthenticated, (req, res) => {
 })
 
   // Register page route
-  app.get('/register', (req, res) => {
+  app.get('/register', checkNotAuthenticated, (req, res) => {
     res.render("pages/register")
   })
 
   // handing user sign up
-  app.post("/register", function(req, res){
+  app.post("/register", checkNotAuthenticated, function(req, res){
       User.register(new User({
         name: req.body.name,
         username: req.body.username,
@@ -73,7 +73,7 @@ app.get("/", checkAuthenticated, (req, res) => {
 
   });
 
-app.get("/login", (req, res) =>{
+app.get("/login", checkNotAuthenticated, (req, res) =>{
   res.render("pages/login")
 })
 
